@@ -125,7 +125,7 @@ export function SessionForm({ onSubmit, isLoading }: Props) {
         disabled={isLoading}
         style={{
           padding: '12px',
-          backgroundColor: isLoading ? '#a78bfa' : '#7c3aed',
+          backgroundColor: isLoading ? '#38bdf8' : '#0ea5e9',
           color: '#fff',
           border: 'none',
           borderRadius: '8px',

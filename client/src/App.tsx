@@ -4,6 +4,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { UserProvider } from './context/UserContext';
 import { usePseudonym } from './hooks/usePseudonym';
 import { Navbar } from './components/Navbar';
+import { CloudBackground } from './components/CloudBackground';
 import { Onboarding } from './pages/Onboarding';
 import { Dashboard } from './pages/Dashboard';
 import { LogSession } from './pages/LogSession';
@@ -41,7 +42,9 @@ function AuthGuard({ children }: { children: React.ReactNode }) {
 function AppRoutes() {
   return (
     <>
+      <CloudBackground />
       <Navbar />
+      <div style={{ position: 'relative', zIndex: 1 }}>
       <Routes>
         <Route path="/onboarding" element={<Onboarding />} />
         <Route
@@ -66,6 +69,7 @@ function AppRoutes() {
         <Route path="/" element={<Navigate to="/dashboard" replace />} />
         <Route path="*" element={<Navigate to="/dashboard" replace />} />
       </Routes>
+      </div>
     </>
   );
 }

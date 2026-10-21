@@ -13,16 +13,18 @@ export function Navbar() {
 
   return (
     <nav style={{
-      backgroundColor: '#1a1a2e',
-      color: '#eee',
+      backgroundColor: '#0c4a6e',
+      color: '#e0f2fe',
       padding: '0 24px',
       display: 'flex',
       alignItems: 'center',
       height: '60px',
       gap: '16px',
-      boxShadow: '0 2px 8px rgba(0,0,0,0.2)',
+      boxShadow: '0 2px 8px rgba(12,74,110,0.3)',
+      position: 'relative',
+      zIndex: 10,
     }}>
-      <Link to="/dashboard" style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#a78bfa', textDecoration: 'none', fontWeight: 700, fontSize: '18px' }}>
+      <Link to="/dashboard" style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#38bdf8', textDecoration: 'none', fontWeight: 700, fontSize: '18px' }}>
         <PenLine size={22} />
         WritingTracker
       </Link>
@@ -31,15 +33,15 @@ export function Navbar() {
 
       {pseudonym && (
         <>
-          <Link to="/dashboard" style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#ccc', textDecoration: 'none', fontSize: '14px' }}>
+          <Link to="/dashboard" style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#bae6fd', textDecoration: 'none', fontSize: '14px' }}>
             <LayoutDashboard size={16} />
             Dashboard
           </Link>
-          <Link to="/log" style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#ccc', textDecoration: 'none', fontSize: '14px' }}>
+          <Link to="/log" style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#bae6fd', textDecoration: 'none', fontSize: '14px' }}>
             <BookOpen size={16} />
             Log Session
           </Link>
-          <span style={{ color: '#888', fontSize: '13px' }}>
+          <span style={{ color: '#7dd3fc', fontSize: '13px' }}>
             {pseudonym}
           </span>
           <button
@@ -49,8 +51,8 @@ export function Navbar() {
               alignItems: 'center',
               gap: '6px',
               background: 'none',
-              border: '1px solid #444',
-              color: '#ccc',
+              border: '1px solid #0369a1',
+              color: '#bae6fd',
               cursor: 'pointer',
               padding: '6px 12px',
               borderRadius: '6px',

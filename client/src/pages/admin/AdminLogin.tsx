@@ -38,7 +38,7 @@ export function AdminLogin() {
   return (
     <div style={{
       minHeight: '100vh',
-      backgroundColor: '#f5f3ff',
+      backgroundColor: '#f0f9ff',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
@@ -59,11 +59,11 @@ export function AdminLogin() {
             justifyContent: 'center',
             width: '60px',
             height: '60px',
-            backgroundColor: '#1a1a2e',
+            backgroundColor: '#0c4a6e',
             borderRadius: '14px',
             marginBottom: '16px',
           }}>
-            <Shield size={28} color="#a78bfa" />
+            <Shield size={28} color="#38bdf8" />
           </div>
           <h1 style={{ fontSize: '22px', fontWeight: 700, color: '#1f2937', marginBottom: '6px' }}>
             Admin Access

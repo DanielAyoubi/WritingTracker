@@ -59,9 +59,9 @@ export function MonthlyLineChart({ sessions, months = 6 }: Props) {
           <Line
             type="monotone"
             dataKey="words"
-            stroke="#7c3aed"
+            stroke="#0ea5e9"
             strokeWidth={2}
-            dot={{ r: 4, fill: '#7c3aed' }}
+            dot={{ r: 4, fill: '#0ea5e9' }}
             activeDot={{ r: 6 }}
           />
         </LineChart>

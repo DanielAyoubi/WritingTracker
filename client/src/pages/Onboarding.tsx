@@ -50,7 +50,7 @@ export function Onboarding() {
   return (
     <div style={{
       minHeight: '100vh',
-      backgroundColor: '#f5f3ff',
+      backgroundColor: '#f0f9ff',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
@@ -62,7 +62,7 @@ export function Onboarding() {
         padding: '48px',
         maxWidth: '480px',
         width: '100%',
-        boxShadow: '0 4px 24px rgba(124, 58, 237, 0.1)',
+        boxShadow: '0 4px 24px rgba(14, 165, 233, 0.12)',
       }}>
         <div style={{ textAlign: 'center', marginBottom: '32px' }}>
           <div style={{
@@ -71,11 +71,11 @@ export function Onboarding() {
             justifyContent: 'center',
             width: '64px',
             height: '64px',
-            backgroundColor: '#ede9fe',
+            backgroundColor: '#e0f2fe',
             borderRadius: '16px',
             marginBottom: '16px',
           }}>
-            <PenLine size={32} color="#7c3aed" />
+            <PenLine size={32} color="#0ea5e9" />
           </div>
           <h1 style={{ fontSize: '28px', fontWeight: 700, color: '#1f2937', marginBottom: '8px' }}>
             Welcome to WritingTracker
@@ -125,7 +125,7 @@ export function Onboarding() {
             style={{
               width: '100%',
               padding: '14px',
-              backgroundColor: isLoading ? '#a78bfa' : '#7c3aed',
+              backgroundColor: isLoading ? '#38bdf8' : '#0ea5e9',
               color: '#fff',
               border: 'none',
               borderRadius: '10px',

@@ -9,14 +9,14 @@ interface Props {
 
 const timeOfDayColors: Record<string, string> = {
   morning: '#fef9c3',
-  afternoon: '#dbeafe',
+  afternoon: '#e0f2fe',
   evening: '#fce7f3',
   night: '#ede9fe',
 };
 
 const timeOfDayBorderColors: Record<string, string> = {
   morning: '#fef08a',
-  afternoon: '#bfdbfe',
+  afternoon: '#bae6fd',
   evening: '#fbcfe8',
   night: '#ddd6fe',
 };
@@ -39,7 +39,7 @@ export function RecentSessionsList({ sessions, limit = 10 }: Props) {
         <div
           key={session.id}
           style={{
-            border: '1px solid #e5e7eb',
+            border: '1px solid #bae6fd',
             borderRadius: '8px',
             padding: '14px 18px',
             backgroundColor: '#fff',

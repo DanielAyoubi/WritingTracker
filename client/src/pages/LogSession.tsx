@@ -47,7 +47,7 @@ export function LogSession() {
             display: 'inline-flex',
             alignItems: 'center',
             gap: '6px',
-            color: '#7c3aed',
+            color: '#0ea5e9',
             textDecoration: 'none',
             fontSize: '14px',
             marginBottom: '16px',
@@ -97,7 +97,7 @@ export function LogSession() {
 
       <div style={{
         backgroundColor: '#fff',
-        border: '1px solid #e5e7eb',
+        border: '1px solid #bae6fd',
         borderRadius: '12px',
         padding: '28px',
       }}>

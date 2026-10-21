@@ -60,7 +60,7 @@ export function Dashboard() {
             alignItems: 'center',
             gap: '8px',
             padding: '10px 20px',
-            backgroundColor: '#7c3aed',
+            backgroundColor: '#0ea5e9',
             color: '#fff',
             borderRadius: '8px',
             textDecoration: 'none',
@@ -75,7 +75,7 @@ export function Dashboard() {
 
       {/* Stats Cards */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '16px', marginBottom: '32px' }}>
-        <StatCard icon={<BookOpen size={20} color="#7c3aed" />} label="Total Sessions" value={String(stats.totalSessions)} />
+        <StatCard icon={<BookOpen size={20} color="#0ea5e9" />} label="Total Sessions" value={String(stats.totalSessions)} />
         <StatCard icon={<PenLine size={20} color="#0ea5e9" />} label="Total Words" value={formatNumber(stats.totalWords)} />
         <StatCard icon={<Clock size={20} color="#10b981" />} label="Time Writing" value={formatDuration(stats.totalMinutes)} />
         <StatCard icon={<TrendingUp size={20} color="#f59e0b" />} label="Avg per Session" value={`${stats.totalSessions > 0 ? Math.round(stats.totalWords / stats.totalSessions) : 0} words`} />
@@ -90,10 +90,10 @@ export function Dashboard() {
       {/* Charts */}
       {sessions.length > 0 && (
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(380px, 1fr))', gap: '24px', marginBottom: '32px' }}>
-          <div style={{ backgroundColor: '#fff', border: '1px solid #e5e7eb', borderRadius: '12px', padding: '20px' }}>
+          <div style={{ backgroundColor: '#fff', border: '1px solid #bae6fd', borderRadius: '12px', padding: '20px' }}>
             <WeeklyBarChart sessions={sessions} />
           </div>
-          <div style={{ backgroundColor: '#fff', border: '1px solid #e5e7eb', borderRadius: '12px', padding: '20px' }}>
+          <div style={{ backgroundColor: '#fff', border: '1px solid #bae6fd', borderRadius: '12px', padding: '20px' }}>
             <MonthlyLineChart sessions={sessions} />
           </div>
         </div>
@@ -114,7 +114,7 @@ function StatCard({ icon, label, value }: { icon: React.ReactNode; label: string
   return (
     <div style={{
       backgroundColor: '#fff',
-      border: '1px solid #e5e7eb',
+      border: '1px solid #bae6fd',
       borderRadius: '12px',
       padding: '18px 20px',
       display: 'flex',
@@ -125,7 +125,7 @@ function StatCard({ icon, label, value }: { icon: React.ReactNode; label: string
         width: '40px',
         height: '40px',
         borderRadius: '10px',
-        backgroundColor: '#f9fafb',
+        backgroundColor: '#e0f2fe',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
